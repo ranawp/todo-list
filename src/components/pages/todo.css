@@ -1,0 +1,12 @@
+input.mb-2.border-blue-500 {
+    border: 1px solid black;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+.footer-css {
+    position: absolute;
+    bottom: 0;
+}
