@@ -6,7 +6,7 @@ const CalendarCompo = () => {
     return (
         <div className='flex mt-3  justify-center items-center '>
             <div className='p-5 lg:p-20'>
-                <h3 className='text-center text-3xl text-primary font-bold'>Calendar</h3>
+                <h3 className='text-center text-3xl text-dark font-bold'>Calendar</h3>
                 <div className='flex justify-center my-5'>
                     <Calendar onChange={onChange} value={value} />
                 </div>

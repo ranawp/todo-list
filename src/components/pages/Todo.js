@@ -38,7 +38,7 @@ const Todo = () => {
             .then(data => setAllTodo(data))
     })
     return (
-        <div className='flex mt-3  justify-center items-center '>
+        <div className='flex mt-3  justify-center items-center blue-bg'>
             <div>
                 <h1 className=' mt-10 mb-5 h-100'>Make your day with todo</h1>
                 <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
