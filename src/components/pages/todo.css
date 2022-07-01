@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(49, 49, 78);
+    color: white;
+}
+
 input.mb-2.border-blue-500 {
     border: 1px solid black;
 }
@@ -6,7 +11,6 @@ ul.b {
     list-style-type: square;
 }
 
-.footer-css {
-    position: absolute;
-    bottom: 0;
+.todo-body {
+    height: 100vh;
 }

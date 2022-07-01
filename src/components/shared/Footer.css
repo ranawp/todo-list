@@ -2,3 +2,9 @@
     position: absolute;
     bottom: 0;
 }
+
+.footer-color {
+    background-color: rgb(49, 49, 78);
+    color: white;
+
+}

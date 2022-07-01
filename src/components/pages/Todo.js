@@ -17,7 +17,7 @@ const Todo = () => {
     // }
 
     const onSubmit = data => {
-        const url = `http://localhost:5000/todo/`
+        const url = `https://tranquil-brushlands-88463.herokuapp.com/todo`
         fetch(url, {
             method: 'POST',
             headers: {
@@ -33,16 +33,16 @@ const Todo = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/todo')
+        fetch('https://tranquil-brushlands-88463.herokuapp.com/todo')
             .then(res => res.json())
             .then(data => setAllTodo(data))
     })
     return (
-        <div className='flex mt-3 mb-3 justify-center items-center'>
+        <div className='flex mt-3  justify-center items-center '>
             <div>
-                <h1 className=' mt-10 mb-5'>Make your day with todo</h1>
+                <h1 className=' mt-10 mb-5 h-100'>Make your day with todo</h1>
                 <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                    <input placeholder='Todo name' className='mb-2 border-blue-500' {...register("name", { required: true, maxLength: 20 })} />
+                    <input placeholder='Todo name' className='mb-2  border-blue-500' {...register("name", { required: true, maxLength: 20 })} />
 
                     <input className=' mx-auto ml-2' type="submit" value="Add" />
                 </form>
@@ -57,9 +57,6 @@ const Todo = () => {
                     }
 
                 </div>
-
-
-
             </div>
         </div>
     );
